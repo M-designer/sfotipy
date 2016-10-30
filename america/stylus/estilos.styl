@@ -72,6 +72,8 @@ ul
 	padding 0 1em 0 2em
 .left
 	float left
+.logo
+	display none
 .name
 	color gris_oscuro
 .menu
@@ -80,9 +82,12 @@ ul
 	padding 1em
 .padding-tb
 	padding 1em 0
+.playlist
+	display none
 .playing
 	//display none
 	&.small
+		margin 0 auto
 		width 20em
 .progress
 	margin 1em 0
@@ -167,15 +172,18 @@ ul
 		display none
 	.header
 		height auto
+		border none
 		.title
 			display none
 	.isotipo
 		width 122px
 	.logo
 		background white
+		display block
 		overflow hidden
 		padding 1.3em 0
 	.menu
+		border-top 1px solid gris_claro
 		display block
 		//background gris_mas_claro
 		overflow hidden
@@ -191,6 +199,28 @@ ul
 				border-top 5px solid transparent
 				&:hover
 					border-top 5px solid gris_claro
+	.music
+		width 32.5em
+		float left
+		.description
+			display none
+	.playlist
+		border-left 1px solid gris_claro
+		display block
+		padding 0 2em
+		width 22em
+		.list
+			list-style none
+			.item
+				padding 1em 0
+				.action
+					font-size 0.9em
+	.playing
+		padding-top 1em
+		&.large
+			margin 0 auto
+			width 62.5em
+			overflow hidden
 	.username
 		color gris_claro
 		margin-left 0.5em
